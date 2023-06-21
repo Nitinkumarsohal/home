@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sanjay</title>
+    <!-- stylesheet  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        section {
+            padding: 50px 0px 50px 0px;
+        }
+
+        .style-box {
+            padding: 30px;
+            background-color: white;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 3px 6px 0px
+        }
+
+        h4 {
+            font-size: 18px;
+            text-transform: capitalize;
+            padding-bottom: 40px;
+
+        }
+
+        .Subject {
+            font-size: 18px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+            max-width: 110px;
+        }
+
+        .logo {
+            padding-top: 30px;
+            padding-bottom: 28px;
+            border-bottom: 7px solid #053692ed;
+
+        }
+
+        .text-two {
+            padding: 40px 0px 0px 40px;
+
+        }
+
+        .text-two .Estimado {
+            font-size: 25px;
+            line-height: 31px;
+        }
+
+        .text-two .padding {
+            padding-top: 20px;
+        }
+
+        .text-two .padding-set {
+            margin-top: 125px;
+            padding-bottom: 30px;
+            font-size: 25px;
+        }
+
+        .main-box {
+            border: 1px solid #053692ed;
+            padding-bottom: 45px;
+        }
+
+        .main-box .box {
+            padding: 17px;
+            background-color: #053692ed;
+        }
+
+        .main-box .cdi {
+            color: white;
+            font-size: 17px;
+            text-align: left;
+        }
+
+        .camp-one {
+            padding-top: 25px;
+        }
+
+        .camp-one h5 {
+            color: #053692ed;
+            font-size: 20px;
+            text-transform: capitalize;
+            font-weight: 600;
+            line-height: 20px;
+        }
+
+        .camp-one p {
+            font-size: 15px;
+
+        }
+
+        .camp-one h6 {
+            text-transform: uppercase;
+            font-size: 19px;
+            line-height: 19px;
+        }
+
+        .price span {
+            font-family: sans-serif;
+            color: #053692ed;
+            font-family: 700 !important;
+            font-size: 22px;
+        }
+
+        .price {
+            display: flex;
+            align-items: center;
+        }
+
+        .Sede {
+            font-size: 15px;
+            line-height: 0%;
+            padding-top: 0px;
+        }
+
+        .Profesor {
+            line-height: 10px;
+        }
+
+        .Subtotal {
+            line-height: 15px;
+        }
+
+        .Total {
+            display: flex;
+            justify-content: end;
+        }
+
+        /***** breakpoints *****/
+        @media (max-width: 1399.98px) {
+            .text-two .padding-set {
+
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 1199.98px) {
+            h4 {
+                padding-bottom: 5px;
+            }
+
+            .text-two {
+                padding: 12px 0px;
+            }
+
+            .text-two .Estimado {
+                font-size: 20px;
+            }
+        }
+
+        /* @media (max-width: 991.98px) {
+            
+        } */
+        @media (max-width: 767.98px) {
+            .camp-one {
+                padding-top: 17px;
+            }
+
+            .camp-one h5 {
+                font-size: 19px;
+            }
+
+            .camp-one h6 {
+                font-size: 18px;
+                LINE-HEIGHT: 18PX;
+            }
+
+            .text-two h3 .Estimado {
+                font-size: 17px;
+            }
+
+            .text-two .padding-set {
+                margin-top: 39px;
+                padding-bottom: 5px !important;
+            }
+
+            .main-box .box {
+                padding: 17px;
+                padding: 10px;
+            }
+
+            .main-box {
+                padding-bottom: 40px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .Subject {
+                font-size: 16px;
+            }
+
+            h4 {
+                padding-bottom: 0px;
+            }
+
+            .logo {
+                padding-top: 20px;
+                padding-bottom: 17px;
+                border-bottom: 5px solid #053692ed;
+            }
+
+            .text-two .Estimado {
+                font-size: 15px;
+                line-height: 24px;
+            }
+
+            .text-two .padding {
+                padding-top: 7px;
+                font-size: 16px;
+            }
+
+            .text-two .padding-set {
+                margin-top: 29px;
+                padding-bottom: 0px !important;
+                font-size: 15px;
+                line-height: 24px;
+            }
+
+            .main-box .cdi {
+                font-size: 12px;
+                text-align: left;
+            }
+
+            .main-box .box {
+                padding: 5px;
+            }
+
+            .main-box {
+                padding-bottom: 35px;
+            }
+
+            .camp-one {
+                padding-top: 15px;
+            }
+
+            .camp-one h5 {
+                font-size: 19px;
+            }
+
+            .camp-one h6 {
+                font-size: 15px;
+                LINE-HEIGHT: 20PX;
+            }
+
+            .price .on {
+                font-size: 18px;
+            }
+
+            .camp-one p {
+                font-size: 13px;
+            }
+
+            .Profesor {
+                line-height: 6px;
+            }
+
+            .Total {
+                justify-content: start;
+                padding-top: 8px;
+            }
+
+            p.Total-text {
+                line-height: 7px;
+            }
+
+
+        }
+
+
+
+
+
+        /***** End breakpoints *****/
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-12 col-sm-12 col-12 ">
+                    <div class="style-box">
+                        <span class="Subject">Subject: Pago realizado con éxito</span>
+                        <div class="logo">
+                            <img src="https://inscripciones.cdi.org.mx/public/assests/images/logo1.png"
+                                style="display:block;" data-auto-embed="attachment" / alt="">
+                        </div>
+                        <div class="text-two">
+                            <h3 class="Estimado">Estimado socio(a) SARA TAIFELD DE SNAIDERMAN la pre inscripción se
+                                realizó con éxito. Recuerde que debe pagarla en un máximo de 48 horas en las cajas del
+                                CDI para mantener el registro.
+                                <br>
+                                A continuación, puede ver los detalles:
+                            </h3>
+                            <div class="carrito">
+                                <div class="container">
+                                    <div class="row hide-mb">
+                                        <div class="col-md-12">
+                                            <h2 class="title">Carrito</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-9 col-8">
+                                            <h4 class="pd-sm-title">CURSO</h4>
+                                        </div>
+                                        <div class="col-md-3 col-4">
+                                            <h4 class="pd-sm-title">PRECIO</h4>
+                                        </div>
+                                    </div>
+                                    <!-- text box one -->
+                                    <div class="row">
+                                        <div class="col-md-10 col-sm-12 col-12 ">
+                                            <div class="camp-one">
+                                                <h5>CAMP CIRCUS SEMANA 1</h5>
+                                                <h6>SARA TAIFELD DE SNAIDERMAN</h6>
+                                                <p>09:30 a 13:30 L M Mi J V Lunes Martes Miercoles Jueves Viernes<br>
+                                                    Inicia: 17/07/2023 Finaliza: 11/08/2023</p>
+                                                <p class="Sede"> Sede: CDI</p>
+                                                <p class="Profesor"> Profesor: DAMARA / JOCELYN </p>
+                                            </div>
+
+                                        </div>
+                                        <div class=" col-md-2 col-sm-12 col-12  price">
+                                            <div class="price">
+                                                <span class="no">$1,580.00</span>
+                                            </div>
+                                        </div>
+                                        <!-- text box two  -->
+                                        <div class="col-md-10 col-sm-12 col-12 " id="top-padding">
+                                            <div class="camp-one ">
+                                                <h5>CAMP CIRCUS SEMANA 2</h5>
+                                                <h6>SARA TAIFELD DE SNAIDERMAN</h6>
+                                                <p>09:30 a 13:30 L M Mi J V Lunes Martes Miercoles Jueves Viernes<br>
+                                                    Inicia: 17/07/2023 Finaliza: 11/08/2023</p>
+                                                <p class="Sede"> Sede: CDI</p>
+                                                <p class="Profesor"> Profesor: DAMARA / JOCELYN </p>
+                                            </div>
+                                        </div>
+                                        <div class=" col-md-2 col-sm-12 col-12  price">
+                                            <div class="price">
+                                                <span class="no">$1,420,22</span>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="Total">
+                                        <div class="total-box">
+                                            <p class="Subtotal"> Subtotal<strong
+                                                    style="margin-left: 15px;">$1,580.00</strong>
+                                            </p>
+                                            <p class="Total-text"> Total<strong style="margin-left: 15px;">
+                                                    $1,580.00</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="carrito-cupn">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-5">
+                                            <div class="subtotal">
+                                                <table>
+                                                    <tr>
+                                                        <td>Subtotal</td>
+                                                        <td><strong>$1,580.00</strong></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total </td>
+                                                        <td><strong>$1,580.00</strong></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <h3 class="padding-set">Gracias por tu preferencia, y te esperamos en el CDI, la casa de
+                                Todos.
+                            </h3>
+                        </div>
+                        <div class="main-box">
+                            <div class="box">
+                                <p class="cdi"> CDI México, gracias por su preferencia.
+                                    <a href="#" style="color: white;">cdi.org.mx </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- js file  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
